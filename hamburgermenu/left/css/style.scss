@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    transition: all 300ms;
+
+    &:hover {
+        color: orange;
+    }
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+        margin-top: 80px;
+    }
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 4%;
+    background-color: #dedede;
+
+    #hamburger-menu {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: cornflowerblue;
+        cursor: pointer;
+
+        .line {
+            position: absolute;
+            left: 12px;
+            width: 50%;
+            height: 2px;
+            border-radius: 4px;
+            background-color: white;
+            transition: all 300ms;
+
+            &:nth-of-type(1) {
+                top: 14px
+            }
+
+            &:nth-of-type(2) {
+                top: 22px
+            }
+
+            &:nth-of-type(3) {
+                top: 30px
+            }
+        }
+
+        &.open {
+            .line {
+                &:nth-of-type(1) {
+                    transform: translateY(8px) rotate(-45deg);
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: translateY(-8px) rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+#nav {
+    width: 200px;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    transform: translateX(-200px);
+    transition: all 500ms ease;
+
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+
+        .nav-item {
+            padding: 16px 32px;
+            border-top: 1px solid lightgray;
+        }
+    }
+
+    &.open {
+        transform: translateX(0);
+    }
+}
