@@ -82,8 +82,10 @@ main .image {
 }
 
 #nav {
+  height: 0;
   color: white;
   text-align: center;
+  z-index: 10;
   transform: translateY(-320px);
   transition: all 500ms ease;
 }
