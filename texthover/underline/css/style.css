@@ -1,0 +1,55 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 4%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-wrapper {
+  display: flex;
+  margin-top: 80px;
+}
+#text-wrapper .text {
+  position: relative;
+  padding: 8px 32px;
+}
+#text-wrapper .text:hover {
+  color: #6F81D6;
+}
+#text-wrapper .text:hover::after {
+  width: 80%;
+}
+#text-wrapper .text::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6F81D6;
+  transform: translateX(-50%);
+  transition: all 500ms;
+  content: "";
+}
+
+/*# sourceMappingURL=style.css.map */
