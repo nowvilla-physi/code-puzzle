@@ -1,0 +1,73 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .image {
+  margin-top: 80px;
+}
+
+#tab-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+#tab-container #tab-headers {
+  width: 30%;
+}
+#tab-container #tab-headers .tab {
+  background-color: #EEEEEE;
+  transition: all 500ms;
+}
+#tab-container #tab-headers .tab:first-of-type {
+  border-top-left-radius: 8px;
+}
+#tab-container #tab-headers .tab:last-of-type {
+  border-bottom-left-radius: 8px;
+}
+#tab-container #tab-headers .tab.active {
+  background-color: #4591BB;
+}
+#tab-container #tab-headers .tab .link {
+  display: block;
+  width: 100%;
+  padding: 8px 32px;
+}
+#tab-container #tab-contents {
+  width: 70%;
+  padding: 16px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #4591BB;
+}
+#tab-container #tab-contents .item {
+  display: none;
+}
+#tab-container #tab-contents .item.active {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
