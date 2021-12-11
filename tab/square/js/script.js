@@ -1,4 +1,4 @@
-$('.tab').on('click',function(){
+$('.tab').on('click', function () {
     const tabs = $('.tab');
     tabs.removeClass('active');
     $(this).addClass('active');
