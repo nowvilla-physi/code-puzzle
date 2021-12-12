@@ -1,0 +1,77 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 4%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn {
+  width: 32px;
+  height: 32px;
+  margin-top: 40px;
+  background: url("../../../images/search/search.svg") no-repeat center;
+  transition: all 500ms;
+}
+.search-btn.open {
+  background: url("../../../images/search/close.svg") no-repeat center;
+}
+
+.search-box-wrapper {
+  display: none;
+  margin-top: 8px;
+}
+.search-box-wrapper.open {
+  display: block;
+  animation: showSearchBox 500ms;
+}
+.search-box-wrapper .search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid silver;
+  transition: all 500ms;
+  background-color: #dedede;
+}
+.search-box-wrapper .search-box .search-input {
+  width: 240px;
+  height: 32px;
+  padding-right: 8px;
+  outline: none;
+}
+.search-box-wrapper .search-box .submit {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes showSearchBox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
