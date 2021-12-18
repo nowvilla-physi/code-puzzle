@@ -1,0 +1,57 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-switch {
+  width: 80px;
+  margin-top: 40px;
+}
+.toggle-switch #switch {
+  display: none;
+}
+.toggle-switch #switch:checked + #label #area {
+  transform: translateX(100%);
+  background-color: #78bd78;
+}
+.toggle-switch #label {
+  display: block;
+  border: 2px solid #78bd78;
+  border-radius: 4px;
+}
+.toggle-switch #label #area {
+  width: 50%;
+  height: 40px;
+  background-color: #999;
+  transition: all 300ms;
+}
+
+/*# sourceMappingURL=style.css.map */
