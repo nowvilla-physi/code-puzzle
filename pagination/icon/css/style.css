@@ -1,0 +1,50 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  display: block;
+  padding: 8px 16px;
+}
+a:hover {
+  color: darkseagreen;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 40px;
+}
+.pagination .item {
+  background-color: #dedede;
+}
+.pagination .item + .active {
+  background-color: darkseagreen;
+}
+.pagination .prev {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.pagination .next {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
