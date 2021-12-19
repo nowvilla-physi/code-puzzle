@@ -16,15 +16,6 @@ h2 {
     text-align: center;
 }
 
-a {
-    display: block;
-    padding: 8px 16px;
-
-    &:hover {
-        color: darkseagreen;
-    }
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -36,20 +27,19 @@ main {
     margin-top: 40px;
 
     .item {
-        background-color: #dedede;
+        margin: 0 16px;
+        border: 1px solid #dedede;
+        border-radius: 4px;
 
-        & + .active {
-            background-color: darkseagreen;
+        .link {
+            display: block;
+            padding: 4px;
+            transition: all 500ms;
+
+            &:hover {
+                border-radius: 4px;
+                background-color: darkseagreen;
+            }
         }
-    }
-
-    .prev {
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }
-
-    .next {
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
     }
 }
