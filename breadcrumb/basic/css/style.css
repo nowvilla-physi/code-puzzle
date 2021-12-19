@@ -1,0 +1,49 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  color: #4591BB;
+}
+a:hover {
+  color: goldenrod;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 40px;
+}
+.breadcrumb .item {
+  position: relative;
+  margin: 0 24px;
+  font-weight: bold;
+}
+.breadcrumb .item::after {
+  position: absolute;
+  top: 0;
+  right: -28px;
+  content: ">";
+}
+.breadcrumb .item:last-child::after {
+  content: "";
+}
+
+/*# sourceMappingURL=style.css.map */
