@@ -1,2 +1,2 @@
-# UI-Catalog
-UI-Catalogのリポジトリです
+# CodePuzzle
+CodePuzzleのリポジトリです
