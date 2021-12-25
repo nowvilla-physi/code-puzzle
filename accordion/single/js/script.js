@@ -1,12 +1,11 @@
 $('.question').on('click', function () {
     $('.answer').slideUp();
 
-    const answerElement = $(this).next('.answer');
-    $(answerElement).slideToggle();
-
-    if ($(this).hasClass('close')) {
-        $(this).removeClass('close');
+    if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
     } else {
-        $(this).addClass('close');
+        $('.question').removeClass('open');
+        $(this).addClass('open');
+        $(this).next('.answer').slideDown();
     }
-});
+})
